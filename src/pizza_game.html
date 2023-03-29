@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="p_style.css" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pizza Game</title>
+	</head>
+	<body>
+		<div id="logo">
+			<a href="#" target="_blank"
+				><img src="media/logo-01.png" alt="Logo" width="100em" />
+			</a>
+		</div>
+		<div class="nav_class" id="nav_id">
+			<a href="javascript:void(0)" class="nav_close" onclick="closingN()"
+				>&times;</a
+			>
+			<a href="home.html" target="_blank">Home</a>
+			<a href="pizza_game.html" target="_blank">Pizza Game</a>
+
+			<a href="viral/viraljo.html" target="_blank">Old Website</a>
+		</div>
+		<span style="font-size: 50px; cursor: pointer" onclick="openingN()"
+			>&#9776;
+		</span>
+
+		<div class="result"><p>...please pick your PIZZA</p></div>
+		<div class="choices">
+			<div class="choice" id="a">
+				<img src="media/alfredo.png" alt="Alfredo" width="300em" />
+				<p>Alfredo</p>
+			</div>
+			<div class="choice" id="m">
+				<img src="media/marghi.png" alt="Margherita" width="300em" />
+				<p>Margherita</p>
+			</div>
+			<div class="choice" id="s">
+				<img src="media/sbp.png" alt="Super Blaze" width="300em" />
+				<p>Super Blaze</p>
+			</div>
+		</div>
+		<p id="action">Lets Play</p>
+		<div class="score_board">
+			<div id="good_label" class="badge">Good</div>
+			<div id="bad_label" class="badge">Burned</div>
+			<div id="lost_label" class="badge">Lost</div>
+			<span id="good_score">0</span> : <span id="bad_score">0</span> :
+			<span id="lost_score">0</span>
+		</div>
+
+		<div align="center"><p id="tablehere"></p></div>
+
+		<div align="center">
+			<a href="#" class="glow_button" id="change" onclick="on_off()">off</a>
+		</div>
+
+		<script src="p_js.js"></script>
+	</body>
+</html>

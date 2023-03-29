@@ -1,0 +1,79 @@
+@charset "utf-8";
+@font-face {
+	src: url(fonts/Metropolis-Regular.otf);
+	font-family: Metropolis;
+}
+
+body {
+	font-family: Metropolis;
+	background-color: rgb(255, 255, 255);
+	background-image: url(media/backg.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-blend-mode: multiply;
+}
+
+.sidenav {
+	height: 100%;
+	width: 170px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #000000;
+	padding-top: 10px;
+	padding-right: 20px;
+	opacity: 0.75;
+}
+
+.sidenav a {
+	padding: 6px 8px 10px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #ffffff;
+	display: block;
+}
+
+.sidenav a:hover {
+	color: #ff0000;
+}
+.img1 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main {
+	margin-left: 170px;
+	font-size: 15px;
+	padding: 0px 10px 0px 40px;
+	color: rgb(0, 0, 0);
+}
+
+.main > table {
+	background-color: rgba(255, 255, 255, 0.465);
+}
+.fieldset {
+	margin: 10px 260px 10px 260px;
+	font-family: Metropolis;
+	font-size: 25px;
+	background-color: floralwhite;
+	padding: 0px 40px 0px 40px;
+	text-align: center;
+}
+.field {
+	margin: 10px 250px 10px 260px;
+	width: 60%;
+	opacity: 0.75;
+}
+
+.vid {
+	margin-left: 160px;
+	padding: 0px 10px 0px 40px;
+}

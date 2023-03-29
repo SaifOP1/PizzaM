@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<p>Enter a name</p>
+		<form name="theform">
+			<input type="text" name="newname" />
+			<input type="button" name="addName" value="Add" onclick="sortNames()" />
+			<br />
+			<textarea name="sorted">
+            The sorted names will appear here
+        </textarea
+			>
+		</form>
+		<script>
+			var numNames = 0;
+			var names = new Array();
+			function sortNames() {
+				thename = document.theform.newname.value;
+				names[numNames] = thename;
+				numNames++;
+				names.sort();
+				document.theform.sorted.value = names.join("\n");
+			}
+		</script>
+	</body>
+</html>
